@@ -50,9 +50,9 @@ class Puppeteer {
      *
      * @return {Promise<Browser>}
      */
-    static async launch({headless = true}) {
+    static async launch(options = {headless : true}) {
 
-        return  stack[stack.push(new Browser( headless )) - 1];
+        return  stack[stack.push(new Browser( opsions.headless )) - 1];
     }
 
     /**
