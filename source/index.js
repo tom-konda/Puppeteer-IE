@@ -52,7 +52,7 @@ class Puppeteer {
      */
     static async launch(options = {headless : true}) {
 
-        return  stack[stack.push(new Browser( opsions.headless )) - 1];
+        return  stack[stack.push(new Browser( options.headless )) - 1];
     }
 
     /**
